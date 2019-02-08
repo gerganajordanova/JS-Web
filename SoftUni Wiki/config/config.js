@@ -1,7 +1,11 @@
+const PATH = require('path');
+
 module.exports = {
     development: {
-        port: process.env.PORT || 3000,
-        dbPath: 'mongodb://localhost:27017/Softuni-Wiki'
+        connectionString: 'mongodb://localhost:27017/SoftUniWiki',
+        rootPath: PATH.normalize(PATH.join(__dirname, '../'))
     },
-    production: {}
+    production: {
+
+    }
 };

@@ -1,11 +1,8 @@
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    /*
-    border: 1px solid black;
-    */
 }
 
 a {
@@ -22,7 +19,7 @@ body {
     padding: 40px;
 }
 
-body > div {
+body>div {
     text-align: left;
     display: inline-block;
     clear: both;
@@ -50,7 +47,7 @@ aside {
     border-right: 1px solid #5d89a1;
 }
 
-nav > a {
+nav>a {
     display: block;
     margin: 10px 0px;
 }
@@ -100,11 +97,10 @@ article {
 
 .controls {
     float: right;
-    display: inline-block;
     margin: 10px 0px;
 }
 
-.controls a{
+.controls a {
     margin-right: 10px;
 }
 
@@ -170,4 +166,18 @@ footer {
     padding: 20px;
     background-color: #5d89a1;
     color: white;
+}
+
+#successBox, #errorBox {
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+}
+
+#successBox {
+    background-color: green;
+}
+
+#errorBox {
+    background-color: red;
 }
